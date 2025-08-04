@@ -1,0 +1,163 @@
+/* Korean Font - Paperlogy */
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* English Font - DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Base Font Settings */
+body {
+    font-family: 'Paperlogy', sans-serif;
+    font-weight: 400;
+}
+
+/* Korean Text Classes */
+.kr-meta-description,
+.kr-page-title,
+.kr-nav-item,
+.kr-btn-text,
+.kr-contact-info,
+.kr-section-title,
+.kr-text,
+.kr-stat-text,
+.kr-service-category,
+.kr-service-item,
+.kr-project-title,
+.kr-project-desc,
+.kr-slider-text,
+.kr-footer-info,
+.kr-company-info,
+.kr-copyright,
+.kr-link-text,
+.kr-section-subtitle {
+    font-family: 'Paperlogy', sans-serif !important;
+}
+
+/* English Text Classes */
+.en-title,
+.en-subtitle,
+.en-text,
+.en-brand,
+.en-number,
+.en-menu,
+.en {
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+/* Mixed Text Classes - Default to Korean */
+.mixed-title,
+.mixed-text {
+    font-family: 'Paperlogy', sans-serif !important;
+}
+
+/* English within Mixed Text */
+.mixed-title .en,
+.mixed-text .en,
+.mixed-title .en-brand,
+.mixed-text .en-brand {
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+/* Headings with Korean text */
+h1.kr-section-title,
+h2.kr-section-title,
+h3.kr-section-title,
+h4.kr-section-title,
+h5.kr-section-title,
+h6.kr-section-title {
+    font-family: 'Paperlogy', sans-serif !important;
+    font-weight: 800;
+}
+
+/* Bold Korean Text */
+.kr-section-title,
+.kr-project-title,
+.kr-service-category {
+    font-weight: 800;
+}
+
+/* Normal weight for body text */
+.kr-text,
+.kr-stat-text,
+.kr-project-desc,
+.kr-contact-info,
+.kr-company-info {
+    font-weight: 400;
+}
+
+/* Medium weight for navigation and buttons */
+.kr-nav-item,
+.kr-btn-text,
+.kr-link-text {
+    font-weight: 500;
+}
+
+/* English Brand Name - Always Bold */
+.en-brand {
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+/* Numbers with English font */
+.number,
+.en-number {
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+/* Footer specific styles */
+.footer-nav-list a {
+    font-family: inherit;
+}
+
+/* Footer Company Info - Smaller Font */
+.footer-widget-box .kr-company-info {
+    font-size: 12px !important;
+    line-height: 1.6;
+}
+
+/* Footer Copyright Area - Smaller Font */
+.copyright-area .copyright-text,
+.copyright-area .kr-copyright,
+.copyright-area .en-brand,
+.copyright-area .kr-link-text {
+    font-size: 12px !important;
+}
+
+/* Form inputs and textareas */
+input,
+textarea,
+select {
+    font-family: 'Paperlogy', sans-serif;
+}
+
+/* Placeholder text */
+::placeholder {
+    font-family: 'Paperlogy', sans-serif;
+}
+
+/* Ensure proper font inheritance */
+* {
+    font-family: inherit;
+}

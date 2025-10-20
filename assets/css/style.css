@@ -6061,7 +6061,8 @@ video.video-area {
 .service-area-4 {
   position: relative;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .services-wrapper-4 {

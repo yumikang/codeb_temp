@@ -52,12 +52,15 @@ work page css
   --secondary: #555555;
   --border: rgba(17, 17, 17, 0.1);
   --bg: #111111;
-  --theme: #FF1D00;
+  --theme: #9328FF;        /* 로고 보라색 - 창의적/혁신적 느낌 */
+  --theme-alt: #4A3AFF;    /* 로고 파란색 - 서브 테마 */
+  --theme-gradient: linear-gradient(90deg, #4A3AFF, #9328FF);  /* 버튼 hover 그라데이션 */
+  --cta-highlight: #C4F012;  /* CTA 강조 컬러 - 네온 옐로우 */
   --black: #111111;
   --black-2: #999999;
   --white: #FFFFFF;
   --white-2: #999999;
-  --action: #FF1D00;
+  --action: #9328FF;       /* 기존 액션 컬러도 테마에 맞춤 */
 }
 :root .dark {
   --primary: #ffffff;
@@ -1135,8 +1138,8 @@ h6 {
 .mobile-menu.mean-container .mean-nav .new {
   font-size: 10px;
   font-weight: 600;
-  background: #FFA38E;
-  color: var(--black-2);
+  background: var(--theme-alt);
+  color: var(--white);
   padding: 3px 7px;
   line-height: 1;
   display: flex;
@@ -2636,8 +2639,8 @@ section {
 .main-menu .new {
   font-size: 10px;
   font-weight: 600;
-  background: #FFA38E;
-  color: var(--black);
+  background: var(--theme-alt);
+  color: var(--white);
   padding: 3px 7px;
   line-height: 1;
   border-radius: 2px;
@@ -2870,8 +2873,8 @@ section {
 .offcanvas__menu-wrapper.mean-container .mean-nav .new {
   font-size: 10px;
   font-weight: 600;
-  background: #FFA38E;
-  color: var(--black);
+  background: var(--theme-alt);
+  color: var(--white);
   padding: 3px 7px;
   line-height: 1;
   display: flex;
@@ -4835,7 +4838,7 @@ video.video-area {
 }
 
 .hero-area-4 {
-  background: #C4F012;
+  background: var(--cta-highlight);
 }
 .hero-area-4 .section-content {
   padding-top: 120px;
@@ -5683,7 +5686,7 @@ video.video-area {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: #C4F012;
+  background-color: var(--cta-highlight);
   color: var(--black);
   border-radius: 50%;
   font-size: 26px;
@@ -18428,6 +18431,6 @@ video.video-area {
 .shape-1,
 .shape-2,
 .shape-3 {
-  color: #FF1D00 !important;
+  color: var(--theme) !important;
 }
 

@@ -3755,7 +3755,7 @@ section {
 }
 .hero-area .big-text {
 
-  font-size: 650px;
+  font-size: 580px;
   font-weight: 700;
   line-height: 0.477;
   letter-spacing: -0.02em;
@@ -3767,12 +3767,12 @@ section {
 }
 @media only screen and (max-width: 1919px) {
   .hero-area .big-text {
-    font-size: 500px;
+    font-size: 450px;
   }
 }
 @media only screen and (max-width: 1399px) {
   .hero-area .big-text {
-    font-size: 420px;
+    font-size: 380px;
   }
 }
 @media only screen and (max-width: 1199px) {

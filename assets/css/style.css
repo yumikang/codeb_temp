@@ -18434,3 +18434,27 @@ video.video-area {
   color: var(--theme) !important;
 }
 
+/* Korean Text Optimization */
+p, .text, .description, .content p,
+.section-content p, .text-wrapper p,
+.footer-nav-list, .service-list {
+  word-break: keep-all;
+  line-height: 1.6;
+  hyphens: auto;
+  font-size: clamp(0.875rem, 2.2vw, 0.95rem);
+  letter-spacing: -0.01em;
+}
+
+/* Card and Container Width */
+.process-card, .service-card, .feature-card {
+  max-width: 300px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .process-card, .service-card, .feature-card {
+    max-width: 100%;
+    padding: 16px;
+  }
+}
+

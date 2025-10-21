@@ -6080,6 +6080,10 @@ video.video-area {
 .services-wrapper-4 .service-box {
   border-top: 1px solid var(--primary);
   width: 760px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media only screen and (max-width: 991px) {
   .services-wrapper-4 .service-box {

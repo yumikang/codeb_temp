@@ -216,7 +216,26 @@ class Slider {
     this.textures = await Promise.all(
       SLIDER_CONFIG.images.map(url => {
         return new Promise((resolve) => {
-          new THREE.TextureLoader().load(url, resolve);
+          const loader = new THREE.TextureLoader();
+          loader.load(url, (texture) => {
+            // Cover 모드로 이미지가 화면에 꽉 차도록 설정
+            const imageAspect = texture.image.width / texture.image.height;
+            const screenAspect = window.innerWidth / (window.innerHeight * 0.5); // 50vh
+
+            if (imageAspect > screenAspect) {
+              // 이미지가 더 넓음 - 높이 기준으로 맞추고 좌우 잘림
+              const scale = screenAspect / imageAspect;
+              texture.repeat.set(scale, 1);
+              texture.offset.set((1 - scale) / 2, 0);
+            } else {
+              // 이미지가 더 높음 - 너비 기준으로 맞추고 상하 잘림
+              const scale = imageAspect / screenAspect;
+              texture.repeat.set(1, scale);
+              texture.offset.set(0, (1 - scale) / 2);
+            }
+
+            resolve(texture);
+          });
         });
       })
     );

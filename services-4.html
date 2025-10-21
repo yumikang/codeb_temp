@@ -22,9 +22,12 @@
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="assets/css/style.css">
-  
+
   <!-- Korean Font CSS File -->
   <link rel="stylesheet" href="assets/css/korean-font.css">
+
+  <!-- Slider CSS File -->
+  <link rel="stylesheet" href="assets/css/slider.css">
 
 </head>
 
@@ -302,6 +305,24 @@
 
       </main>
 
+      <!-- WebGL Slider Section -->
+      <section class="slider-wrapper" id="slider-section">
+        <!-- WebGL Canvas -->
+        <canvas class="webgl-canvas"></canvas>
+
+        <!-- Slide Counter -->
+        <div class="slide-counter">
+          <div class="slide-number" id="slideNumber">01</div>
+          <div class="slide-total" id="slideTotal">06</div>
+        </div>
+
+        <!-- Slide Navigation -->
+        <nav class="slides-navigation" id="slidesNav"></nav>
+
+        <!-- Help Text -->
+        <div class="help-text">Use arrow keys, swipe, or click to navigate</div>
+      </section>
+
       <!-- footer area start  -->
       <footer class="footer-area">
         <div class="container large">
@@ -381,6 +402,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Slider JS File -->
+  <script type="module" src="assets/js/slider.js"></script>
 
 </body>
 

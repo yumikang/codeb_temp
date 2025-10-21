@@ -6061,6 +6061,7 @@ video.video-area {
 .service-area-4 {
   position: relative;
   width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
   overflow-y: visible;
 }
@@ -6083,9 +6084,9 @@ video.video-area {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  justify-content: flex-start;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
   .services-wrapper-4 .service-box {

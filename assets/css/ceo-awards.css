@@ -1,0 +1,367 @@
+/* CEO Awards & Achievements Section Styles */
+
+.ceo-awards-area {
+  background: #0a0a0a;
+  position: relative;
+}
+
+.ceo-awards-inner {
+  position: relative;
+}
+
+/* Section Description */
+.section-description {
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* Timeline Wrapper */
+.timeline-wrapper {
+  position: relative;
+  margin-top: 60px;
+}
+
+/* Timeline Period */
+.timeline-period {
+  position: relative;
+  margin-bottom: 80px;
+  padding-left: 40px;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.timeline-period:last-child {
+  margin-bottom: 0;
+}
+
+/* Period Header */
+.period-header {
+  margin-bottom: 40px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.period-header::before {
+  content: '';
+  position: absolute;
+  left: -42px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.2);
+}
+
+.period-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+  font-family: 'Sequel Sans', sans-serif;
+}
+
+.period-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* Timeline Items */
+.timeline-items {
+  display: grid;
+  gap: 24px;
+  padding-left: 30px;
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 24px 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 107, 107, 0.3);
+  transform: translateX(5px);
+}
+
+.timeline-item.highlight {
+  background: rgba(255, 107, 107, 0.05);
+  border-color: rgba(255, 107, 107, 0.2);
+}
+
+.timeline-item.highlight:hover {
+  background: rgba(255, 107, 107, 0.08);
+  border-color: rgba(255, 107, 107, 0.4);
+}
+
+.timeline-item.award-item {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 107, 107, 0.05) 100%);
+  border-color: rgba(255, 107, 107, 0.3);
+}
+
+.timeline-item.award-item:hover {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.15) 0%, rgba(255, 107, 107, 0.08) 100%);
+  border-color: rgba(255, 107, 107, 0.5);
+}
+
+/* Timeline Year */
+.timeline-year {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff6b6b;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Timeline Content */
+.timeline-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.timeline-content p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.badge.award {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8787 100%);
+  color: #fff;
+  border-color: #ff6b6b;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+/* Highlights Summary */
+.highlights-summary {
+  position: relative;
+}
+
+.highlight-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-card:hover {
+  background: rgba(255, 107, 107, 0.05);
+  border-color: rgba(255, 107, 107, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.1);
+}
+
+.highlight-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff6b6b;
+  margin-bottom: 12px;
+  font-family: 'Sequel Sans', sans-serif;
+  line-height: 1;
+}
+
+.highlight-label {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+/* Responsive Design */
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .period-title {
+    font-size: 28px;
+  }
+
+  .timeline-content h4 {
+    font-size: 18px;
+  }
+
+  .timeline-period {
+    padding-left: 30px;
+  }
+
+  .period-header,
+  .timeline-items {
+    padding-left: 20px;
+  }
+
+  .highlight-number {
+    font-size: 40px;
+  }
+
+  .highlight-label {
+    font-size: 15px;
+  }
+}
+
+/* Mobile (576px - 767px) */
+@media (max-width: 767px) {
+  .timeline-period {
+    padding-left: 20px;
+    margin-bottom: 60px;
+  }
+
+  .period-header {
+    margin-bottom: 30px;
+    padding-left: 15px;
+  }
+
+  .period-header::before {
+    left: -22px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .period-title {
+    font-size: 24px;
+  }
+
+  .period-subtitle {
+    font-size: 14px;
+  }
+
+  .timeline-items {
+    padding-left: 15px;
+    gap: 20px;
+  }
+
+  .timeline-item {
+    padding: 20px 24px;
+  }
+
+  .timeline-content h4 {
+    font-size: 17px;
+  }
+
+  .timeline-content p {
+    font-size: 14px;
+  }
+
+  .highlight-card {
+    padding: 35px 25px;
+    min-height: 140px;
+  }
+
+  .highlight-number {
+    font-size: 36px;
+  }
+
+  .highlight-label {
+    font-size: 14px;
+  }
+
+  .highlights-summary {
+    margin-top: 60px !important;
+  }
+}
+
+/* Small Mobile (< 576px) */
+@media (max-width: 575px) {
+  .timeline-period {
+    padding-left: 15px;
+    border-left-width: 1px;
+  }
+
+  .period-header {
+    padding-left: 10px;
+  }
+
+  .period-header::before {
+    left: -18px;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2);
+  }
+
+  .period-title {
+    font-size: 22px;
+  }
+
+  .timeline-items {
+    padding-left: 10px;
+  }
+
+  .timeline-item {
+    padding: 18px 20px;
+  }
+
+  .timeline-year {
+    font-size: 13px;
+  }
+
+  .timeline-content h4 {
+    font-size: 16px;
+  }
+
+  .timeline-content p {
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .highlight-card {
+    padding: 30px 20px;
+    min-height: 130px;
+  }
+
+  .highlight-number {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .highlight-label {
+    font-size: 13px;
+  }
+
+  .section-description {
+    font-size: 16px !important;
+  }
+}
+
+/* Landscape Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .highlight-card {
+    min-height: 120px;
+    padding: 25px 20px;
+  }
+
+  .highlight-number {
+    font-size: 32px;
+  }
+}
